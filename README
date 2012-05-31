@@ -1,0 +1,36 @@
+Supported compilers:
+
+legend:
+    'X' - supported (verified)
+    '%' - supported, but not whole regression works (verified)
+    '#' - might works (not verified)
+    '-' - not supported
+    ' ' - platform unavaliable
+
+    compiler/architecture                  x86  x86_64(m32) x86_64 power_pc power_pc_64
+
+linux:
+    GNU C++ (gcc)                          X    X           %      -        -
+    3.4 - 4.6
+    (-finstrument-functions)
+
+    clang                                  #    #           %      -        -
+    2.8, 2.9
+    (-finstrument-functions)
+
+    intel c++ (icc)                        #    #           -      -        -
+    11.0
+    (-finstrument-functions)
+
+macosx:
+    apple gcc                              #    #           -      -        -
+    (-finstrument-functions)
+
+windows:
+    gcc-mingw                              -
+    (-finstrument-functions)
+
+    mvc                                    -    -
+    6.0, 8.0, 10.0
+    (/GH /Gh)
+
